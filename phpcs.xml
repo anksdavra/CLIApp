@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ruleset name="IM_sniffer">
+    <description>The coding standard for PHP_CodeSniffer itself.</description>
+    <rule ref="PSR2"/>
+
+    <!-- Detect short php tags -->
+    <rule ref="Generic.PHP.DisallowShortOpenTag.EchoFound" />
+
+    <!-- We don't want whitespace after non empty lines either -->
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace" />
+
+    <!-- Folders to scan -->
+    <file>./src</file>
+    <file>./tests</file>
+    <exclude-pattern>*.js</exclude-pattern>
+</ruleset>
